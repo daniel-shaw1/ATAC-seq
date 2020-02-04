@@ -8,8 +8,7 @@
 #PBS -m ae
 
 
-cd /lustre1/des65576/Adult_Liver3-46373394/
-
+cd /scratch/des65576/LakeWashington_ATACseq_August2019/LW-L2-F/
 module load Trimmomatic/0.36-Java-1.8.0_144
 
 

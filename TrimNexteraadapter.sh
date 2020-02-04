@@ -19,5 +19,7 @@ do
   export iden=${file%%.fastq.gz}
   export log=${iden}.log
   export output=${iden}_trim.fastq.gz
-java -jar /usr/local/apps/eb/Trimmomatic/0.36-Java-1.8.0_144/trimmomatic-0.36.jar PE -threads 4 -phred33 -trimlog ${bam}.log -basein ${file} -baseout ${output}_trim.fastq.gz SLIDINGWINDOW:4:20
+java -jar /usr/local/apps/eb/Trimmomatic/0.36-Java-1.8.0_144/trimmomatic-0.36.jar PE -threads 16 -phred64 -trimlog ${bam}.log -basein ${file} -baseout ${output}_trim.fastq.gz ILLUMINACLIP:/usr/local/apps/eb/Trimmomatic/0.36-Java-1.8.0_144/adapters/NexteraPE-PE.fa:2:30:10 LEADING:0 TRAILING:0 MINLEN:30
 done
+
+

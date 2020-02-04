@@ -4,7 +4,6 @@
 #PBS -l nodes=1:ppn=24
 #PBS -l mem=20gb
 #PBS -l walltime=24:00:00
-#PBS -M daniel.shaw@uga.edu
 #PBS -m ae
 
 cd /scratch/des65576/LWL2F/
